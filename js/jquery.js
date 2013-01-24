@@ -10,15 +10,25 @@ $(function(){
             asa = "00:0" + asa;
                     
         if(asa > asa_threshold_red)
-            $(this).css('background-color', 'red');
+            $(this).css({
+                'background-color' : 'red',
+                'font-weight' : 'bold',
+                'color' : 'white'
+            });
         else if(asa > asa_threshold_yellow)
-            $(this).css('background-color', 'yellow');
+            $(this).css({'background-color' : 'yellow', 'font-weight' : 'bold' });
     });
 
     $(".aux_reason").each(function(){
         if($(this).html() == 'Lunch' && $(this).closest("tr").find(".time").html() > lunch_threshold)
         {
-            $($(this).closest("tr").find(".time")).css('background-color', 'red');
+            //$($(this).closest("tr").find(".time")).css('background-color', 'red');
+            $($(this).closest("tr").find(".time")).css({
+                'font-weight' : 'bold',
+                'color' : 'white', 
+                'background-color' : 'red'
+            });
+            $($(this).closest("tr").find(".time")).effect('pulsate', { times: 5 }, 10000);
         }
     });
     

@@ -17,6 +17,7 @@
 
         $skills_array = $employee->getSkills('skills.txt');
         $agents_array = $employee->getAgents('agents.txt');
+        
         ?>
         <div id="container">
             <div class="row-fluid">
@@ -125,28 +126,18 @@
                 </div>
                 <div class="span3">
                     <div id="lunch">
-                        <span class="label label-success"><h3>Lunch</h3></span>
-                        <h2>
-                            <?php
-                            echo $lunch;
-                            ?>
-                        </h2>
+                        <div class="aux_header"><h4 class="center">Lunch</h4></div>
+                        <h2 class="center"><?php echo $lunch; ?></h2>
                     </div>
+                    <br />
                     <div id="break">
-                        <span class="label label-success"><h3>Break</h3></span>
-                        <h2>
-                            <?php
-                            echo $break;
-                            ?>
-                        </h2>
+                        <div class="aux_header"><h4 class="center">Break</h4></div>
+                        <h2 class="center"><?php echo $break; ?></h2>
                     </div>
+                    <br />
                     <div id="project">
-                        <span class="label label-success"><h3>Project</h3></span>
-                        <h2>
-                            <?php
-                            echo $project;
-                            ?>
-                        </h2>
+                        <div class="aux_header"><h4 class="center">Project</h4></div>
+                        <h2 class="center"><?php echo $project; ?></h2>
                     </div>
                 </div>
             </div>

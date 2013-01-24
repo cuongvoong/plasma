@@ -39,133 +39,170 @@ class CMS
 
     function getAgents($filename)
     {
-        while (!is_readable($filename))
+
+        if (!$handle = @fopen($filename, 'r'))
         {
-            sleep(1);
+            echo 'Could not load ' . $filename;
+            die;
         }
 
-        $handle = fopen($filename, 'r');
-
-        //Remove the first two unused line
-        $fread_line = fgets($handle);
-        //$fread_line = fgets($handle);
-        $fread_line = fgets($handle);
-
-        $agents_detail = array();
-        $agents_array = array();
-
-        while (!feof($handle))
+        if (!flock($handle, LOCK_EX))
         {
+            echo 'Could not lock ' . $filename;
+            die;
+        }
+        
+        if(!$this->is_current($filename))
+        {
+            echo 'The PLASMA has not updated for over 3 minutes!';
+            die;
+        }
+        else
+        {
+            //Remove the first two unused line
             $fread_line = fgets($handle);
-            $agents_detail[] = preg_split('/\t/', $fread_line);
-            
-            if (isset($agents_detail[0][0]) && $agents_detail[0][0] != '')
-            {
-                $name = explode(', ', $agents_detail[0][3]);
-                $firstname = strtolower(trim($name[1]));
-                $lastname = strtolower(trim($name[0]));
+            //$fread_line = fgets($handle);
+            $fread_line = fgets($handle);
 
-                if (!isset(${$lastname . '_' . $firstname}))
+            $agents_detail = array();
+            $agents_array = array();
+
+            while (!feof($handle))
+            {
+                $fread_line = fgets($handle);
+                $agents_detail[] = preg_split('/\t/', $fread_line);
+
+                if (isset($agents_detail[0][0]) && $agents_detail[0][0] != '')
                 {
-                    ${$lastname . '_' . $firstname} = new Agent();
-                    ${$lastname . '_' . $firstname}->firstname = ucfirst($firstname);
-                    ${$lastname . '_' . $firstname}->lastname = ucfirst($lastname);
-                    $agents_array[$lastname . '_' . $firstname] = ${$lastname . '_' . $firstname};
-                }
-                if ($lastname != '' && $firstname != '')
-                {
-                    ${$lastname . '_' . $firstname}->set_skills($agents_detail[0][0]);
-                    if (!isset(${$lastname . '_' . $firstname}->state))
-                        ${$lastname . '_' . $firstname}->state = $agents_detail[0][6];
-                    if (!isset(${$lastname . '_' . $firstname}->login_id))
-                        ${$lastname . '_' . $firstname}->login_id = $agents_detail[0][2];
-                    if (!isset(${$lastname . '_' . $firstname}->extn))
-                        ${$lastname . '_' . $firstname}->extn = $agents_detail[0][4];
-                    if (!isset(${$lastname . '_' . $firstname}->aux_reason))
-                        ${$lastname . '_' . $firstname}->aux_reason = $agents_detail[0][5];
-                    if (!isset(${$lastname . '_' . $firstname}->direction))
-                        ${$lastname . '_' . $firstname}->direction = $agents_detail[0][7];
-                    if (!isset(${$lastname . '_' . $firstname}->active_split))
-                        ${$lastname . '_' . $firstname}->active_split = $agents_detail[0][8];
-                    if (!isset(${$lastname . '_' . $firstname}->time))
+                    $name = explode(', ', $agents_detail[0][3]);
+                    $firstname = strtolower(trim($name[1]));
+                    $lastname = strtolower(trim($name[0]));
+
+                    if (!isset(${$lastname . '_' . $firstname}))
                     {
-                        if ($agents_detail[0][10][0] == ':')
+                        ${$lastname . '_' . $firstname} = new Agent();
+                        ${$lastname . '_' . $firstname}->firstname = ucfirst($firstname);
+                        ${$lastname . '_' . $firstname}->lastname = ucfirst($lastname);
+                        $agents_array[$lastname . '_' . $firstname] = ${$lastname . '_' . $firstname};
+                    }
+                    if ($lastname != '' && $firstname != '')
+                    {
+                        ${$lastname . '_' . $firstname}->set_skills($agents_detail[0][0]);
+                        if (!isset(${$lastname . '_' . $firstname}->state))
+                            ${$lastname . '_' . $firstname}->state = $agents_detail[0][6];
+                        if (!isset(${$lastname . '_' . $firstname}->login_id))
+                            ${$lastname . '_' . $firstname}->login_id = $agents_detail[0][2];
+                        if (!isset(${$lastname . '_' . $firstname}->extn))
+                            ${$lastname . '_' . $firstname}->extn = $agents_detail[0][4];
+                        if (!isset(${$lastname . '_' . $firstname}->aux_reason))
+                            ${$lastname . '_' . $firstname}->aux_reason = $agents_detail[0][5];
+                        if (!isset(${$lastname . '_' . $firstname}->direction))
+                            ${$lastname . '_' . $firstname}->direction = $agents_detail[0][7];
+                        if (!isset(${$lastname . '_' . $firstname}->active_split))
+                            ${$lastname . '_' . $firstname}->active_split = $agents_detail[0][8];
+                        if (!isset(${$lastname . '_' . $firstname}->time))
                         {
-                            ${$lastname . '_' . $firstname}->time = date('H:i:s', strtotime('00' . $agents_detail[0][10]));
+                            if ($agents_detail[0][10][0] == ':')
+                            {
+                                ${$lastname . '_' . $firstname}->time = date('H:i:s', strtotime('00' . $agents_detail[0][10]));
+                            }
+                            else
+                            {
+                                ${$lastname . '_' . $firstname}->time = date('H:i:s', strtotime($agents_detail[0][10]));
+                            }
                         }
                     }
                 }
+                unset($agents_detail);
             }
-            unset($agents_detail);
-        }
 
-        return $agents_array;
+            fclose($handle);
+
+            return $agents_array;
+        }
+        return FALSE;
     }
 
     function getSkills($filename)
     {
-        while (!is_readable($filename))
+
+        if (!$handle = @fopen($filename, 'r'))
         {
-            sleep(1);
+            echo 'Could not load ' . $filename;
+            die;
         }
 
-        $handle = fopen($filename, 'r');
-
-        //Remove the first two unused line
-        $fread_line = fgets($handle);
-        $fread_line = fgets($handle);
-
-        $skills_detail = array();
-        $skills_array = array();
-
-        while (!feof($handle))
+        if (!flock($handle, LOCK_EX))
         {
+            echo 'Could not lock ' . $filename;
+            die;
+        }
+        
+        if(!$this->is_current($filename))
+        {
+            echo 'The PLASMA has not updated for over 3 minutes!';
+            die;
+        }
+        else
+        {
+            //Remove the first two unused line
             $fread_line = fgets($handle);
-            $skills_detail[] = preg_split('/\t/', $fread_line);
-            
-            if ($skills_detail[0][0] != '')
+            $fread_line = fgets($handle);
+
+            $skills_detail = array();
+            $skills_array = array();
+
+            while (!feof($handle))
             {
-                $skill_name = str_replace(' ', '_', $skills_detail[0][0]);
-                if (!isset(${$skill_name}))
+                $fread_line = fgets($handle);
+                $skills_detail[] = preg_split('/\t/', $fread_line);
+
+                if ($skills_detail[0][0] != '')
                 {
-                    ${$skill_name} = new Skill();
-                    $skills_array[$skill_name] = ${$skill_name};
-                }
-                if (!isset(${$skill_name}->avg_aban_time))
-                {
-                    ${$skill_name}->avg_aban_time = $skills_detail[0][1];
-                    if ($skills_detail[0][1][0] == ':')
-                        ${$skill_name}->avg_aban_time = '0' . $skills_detail[0][1];
-                }
-                if (!isset(${$skill_name}->aban_calls))
-                    ${$skill_name}->aban_calls = $skills_detail[0][2];
-                if (!isset(${$skill_name}->avg_acd_time))
-                {
-                    ${$skill_name}->avg_acd_time = $skills_detail[0][3];
-                    if ($skills_detail[0][3][0] == ':')
-                        ${$skill_name}->avg_acd_time = '0' . $skills_detail[0][3];
-                }
-                if (!isset(${$skill_name}->acd_calls))
-                    ${$skill_name}->acd_calls = $skills_detail[0][4];
-                if (!isset(${$skill_name}->avg_speed_ans))
-                {
-                    ${$skill_name}->avg_speed_ans = $skills_detail[0][5];
-                    if ($skills_detail[0][5][0] == ':')
-                        ${$skill_name}->avg_speed_ans = '0' . $skills_detail[0][5];
+                    $skill_name = str_replace(' ', '_', $skills_detail[0][0]);
+                    if (!isset(${$skill_name}))
+                    {
+                        ${$skill_name} = new Skill();
+                        $skills_array[$skill_name] = ${$skill_name};
+                    }
+                    if (!isset(${$skill_name}->avg_aban_time))
+                    {
+                        ${$skill_name}->avg_aban_time = $skills_detail[0][1];
+                        if ($skills_detail[0][1][0] == ':')
+                            ${$skill_name}->avg_aban_time = '0' . $skills_detail[0][1];
+                    }
+                    if (!isset(${$skill_name}->aban_calls))
+                        ${$skill_name}->aban_calls = $skills_detail[0][2];
+                    if (!isset(${$skill_name}->avg_acd_time))
+                    {
+                        ${$skill_name}->avg_acd_time = $skills_detail[0][3];
+                        if ($skills_detail[0][3][0] == ':')
+                            ${$skill_name}->avg_acd_time = '0' . $skills_detail[0][3];
+                    }
+                    if (!isset(${$skill_name}->acd_calls))
+                        ${$skill_name}->acd_calls = $skills_detail[0][4];
+                    if (!isset(${$skill_name}->avg_speed_ans))
+                    {
+                        ${$skill_name}->avg_speed_ans = $skills_detail[0][5];
+                        if ($skills_detail[0][5][0] == ':')
+                            ${$skill_name}->avg_speed_ans = '0' . $skills_detail[0][5];
 //                    if (strlen(${$skill_name}->avg_speed_ans) == 4)
 //                        ${$skill_name}->avg_speed_ans = '0:0' . ${$skill_name}->avg_speed_ans;
+                    }
+                    if (!isset(${$skill_name}->oldest_call_waiting))
+                    {
+                        ${$skill_name}->oldest_call_waiting = trim($skills_detail[0][7]);
+                        if ($skills_detail[0][7][0] == ':')
+                            ${$skill_name}->oldest_call_waiting = '0' . trim($skills_detail[0][7]);
+                    }
                 }
-                if (!isset(${$skill_name}->oldest_call_waiting))
-                {
-                    ${$skill_name}->oldest_call_waiting = trim($skills_detail[0][7]);
-                    if ($skills_detail[0][7][0] == ':')
-                        ${$skill_name}->oldest_call_waiting = '0' . trim($skills_detail[0][7]);
-                }
+                unset($skills_detail);
             }
-            unset($skills_detail);
-        }
 
-        return $skills_array;
+            fclose($handle);
+
+            return $skills_array;
+        }
     }
 
     public function getConfig()
@@ -184,6 +221,14 @@ class CMS
                 $this->acw_threshold = $row['acw_threshold'];
             }
         }
+    }
+    
+    public function is_current($filename)
+    {
+        if(time() - filemtime($filename) < 180)
+            return true;
+        else
+            return false;
     }
 
 }

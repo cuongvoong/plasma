@@ -6,6 +6,7 @@
 #agents_detail {
     border: 2px solid black;
     border-collapse: collapse;
+    width: 98%;
 }
 
 #skills_detail th, #skills_detail td {
@@ -16,6 +17,7 @@
 #skills_detail {
     border: 2px solid black;
     border-collapse: collapse;
+    width: 98%;
 }
 
 .red {
@@ -24,4 +26,43 @@
 
 .yellow {
     background-color: yellow;
+}
+
+.center {
+    text-align: center;
+}
+
+.aux_header h4 {
+    margin: 0;
+    padding: 2px;
+}
+
+#lunch {
+    width: 100px;
+    border: 2px solid black;
+}
+
+#lunch .aux_header {
+    background-color: aqua;
+    border-bottom: 1px solid black;
+}
+
+#break {
+    width: 100px;
+    border: 2px solid black;
+}
+
+#break .aux_header {
+    background-color: greenyellow;
+    border-bottom: 1px solid black;
+}
+
+#project {
+    width: 100px;
+    border: 2px solid black;
+}
+
+#project .aux_header {
+    background-color: aquamarine;
+    border-bottom: 1px solid black;
 }
