@@ -1,0 +1,27 @@
+#agents_detail th, #agents_detail td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#agents_detail {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#skills_detail th, #skills_detail td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#skills_detail {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}

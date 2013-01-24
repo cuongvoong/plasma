@@ -1,0 +1,199 @@
+Split/Skill	FR Emergency;FR English Emergency;FR in English Main;FR Main;IT Emergency;IT English Emergency;IT in English Main;IT Main;ROI Emergency;ROI Main;SS Access Line;SS Peak;SS PM;UK Emergency;UK Main;US Emergency;US French Emergency;US in French Main;US in Spanish Main;US Main;US Spanish Emergency
+Split/Skill		Login ID	Agent Name	Extn	AUX Reason	State	Direction	Active Split/Skill	Percent	Time
+442	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+467	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+409	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+467	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+477	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+440	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+440	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+441	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+476	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+477	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+481	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+440	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+442	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+475	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+467	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+411	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+484	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+411	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+441	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+476	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+482	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+477	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+410	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+484	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+441	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+476	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+476	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+482	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+475	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+442	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+476	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+411	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+441	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+479	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+481	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+479	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+440	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+442	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+479	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+481	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+467	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+483	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+482	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+475	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+447	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+482	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+481	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+442	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+447	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+467	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+483	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+466	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+466	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+467	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+475	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+441	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+410	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+409	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+410	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+467	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+440	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+483	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+477	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+467	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+475	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+466	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+484	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+409	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+476	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+483	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+442	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+484	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+411	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+482	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+483	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+441	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+479	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+409	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+479	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+441	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+484	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+482	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+482	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+447	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+476	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+466	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+483	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+466	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+410	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+479	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+477	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+440	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+477	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+441	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+411	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+442	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+410	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+476	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+479	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+479	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+479	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+442	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+477	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+483	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+410	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+481	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+475	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+411	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+441	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+481	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+467	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+484	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+475	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+482	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+476	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+410	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+466	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+483	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+409	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+440	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+477	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+479	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+411	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+476	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+410	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+411	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+481	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+409	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+409	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+467	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+440	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+411	3	20156	Parry, Russell	27073		ACD	IN	US Main	0	:07:02
+484	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+442	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+441	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+475	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+410	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+475	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+479	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+409	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+466	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+411	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+440	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+410	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+484	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+442	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+442	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+411	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+484	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+440	3	20028	Robinette, Curt	27085		ACD	IN	US Main	0	:00:27
+466	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+481	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+409	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+440	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+409	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+442	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+441	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+410	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+481	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+466	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+482	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+467	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+409	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+483	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+440	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+466	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+475	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+410	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+409	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+442	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+481	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+409	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+410	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+441	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+482	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+484	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+441	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+411	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+411	5	28552	Washington, Jeanette	22989	Lunch	AUX			0	:08:25
+410	5	26553	McCauley, Diedra	28303	Project	AUX			0	:07:34
+442	2	26574	Patel, Umesh	28097		AVAIL			0	:01:38
+476	5	26519	Crawford, Brandon	28323	Lunch	AUX			0	:13:31
+477	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+409	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+441	3	20145	Ruiz, Paul	27033		ACD	IN	US Main	0	:03:13
+483	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+440	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+483	5	20144	Hobbs, Scott	27013		AUX	OUT	US Main	0	:01:08
+411	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+475	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+477	3	20135	Lindley, Dax	27146		ACD	IN	US Main	0	:15:42
+477	5	20138	Shigeno, Blake	27129	Lunch	AUX			0	:44:28
+482	3	21907	Talbert, Dennis	28357		ACD	IN	US Main	0	:09:49
+466	4	20002	Jones, Bryan	28326		ACW		US Emergency	0	:00:06
+481	2	20216	Kraus, Nicole	28381		AVAIL			0	:00:08
+440	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
+484	4	20221	Vang, Kong	27108		ACW		US Main	0	:00:52
