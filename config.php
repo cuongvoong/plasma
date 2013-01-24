@@ -1,0 +1,6 @@
+<?php
+
+$db['host'] = '';
+$db['user'] = '';
+$db['password'] = '';
+$db['database'] = '';
