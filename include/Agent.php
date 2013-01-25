@@ -14,11 +14,6 @@ class Agent
     private $active_split;
     private $time;
 
-    function __construct()
-    {
-        $skills = array();
-    }
-
     public function __set($property, $value)
     {
         if (property_exists($this, $property))

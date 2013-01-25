@@ -189,6 +189,8 @@ class CMS
 //                    if (strlen(${$skill_name}->avg_speed_ans) == 4)
 //                        ${$skill_name}->avg_speed_ans = '0:0' . ${$skill_name}->avg_speed_ans;
                     }
+                    if (!isset(${$skill_name}->inqueue))
+                        ${$skill_name}->inqueue = $skills_detail[0][6];
                     if (!isset(${$skill_name}->oldest_call_waiting))
                     {
                         ${$skill_name}->oldest_call_waiting = trim($skills_detail[0][7]);
@@ -225,10 +227,10 @@ class CMS
     
     public function is_current($filename)
     {
-        if(time() - filemtime($filename) < 180)
+        //if(time() - filemtime($filename) < 180)
             return true;
-        else
-            return false;
+        //else
+        //    return false;
     }
 
 }

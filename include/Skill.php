@@ -7,9 +7,7 @@ class Skill {
     private $avg_acd_time;
     private $acd_calls;
     private $oldest_call_waiting;
-
-    function __construct() {
-    }
+    private $inqueue;
     
     public function __set($property, $value) 
     {
